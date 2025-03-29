@@ -1,0 +1,307 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 1em;
+}
+
+body.index-page {
+  background: url('https://www.caterboss.ie/site/uploads/sys_articles/sushi-types.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.index-page .content p,
+.index-page .content span {
+  color: white;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Universal link style */
+
+a {
+  color: black;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: darkblue;
+  animation: blink-animation 0.5s step-start infinite;
+  animation-delay: 2s;
+}
+
+/* Causes links to blink */
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+}
+
+a:visited {
+  color: darkslateblue;
+}
+
+/* Text centering class */
+.text_center {
+  text-align: center;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 5%;
+    align-items: center;
+    background-color: #ADD8E6;
+  
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.header h2,
+.header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color:black ;
+    font-weight: bold;
+}
+
+.header a:hover {
+  color: darkblue;
+}
+
+.header h2 {
+   font-size: 3.125em;
+  font-weight: bold;
+  color: blue;
+}
+
+.header a {
+    font-size: 1.4375em;
+}
+
+/* content */
+
+/* Universal column */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  border-bottom: solid 1px grey;
+  padding: 5px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Index page */
+
+.index-page .content {
+  gap: 30px;
+}
+
+.food_carousel {
+  height: 400px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer_container {
+  background: grey;
+  width: 100%;
+  text-align: center;
+}
+
+.food_carousel .image_container {
+  position: relative;
+  width: 800px;
+  height: 350px;
+}
+
+.food_carousel img {
+  width: 800px;
+  height: 350px;
+}
+
+.food_carousel .left,
+.food_carousel .right {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  box-sizing: border-box;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.food_carousel .left {
+  left: 0;
+}
+
+.food_carousel .right {
+  right: 0;
+}
+
+.info_container {
+  background: grey;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Reservation page content */
+#reservation .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#reservation #reservation_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+/* Contact page content*/
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#contact_form{
+  background: white;
+  padding: 20px;
+  border: 3px solid blue;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+}
+#contact_form div{
+  margin-bottom: 15px;
+}
+#contact_form input,
+#contact_form textarea{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+ #contact_form input[type="submit"] {
+background: skyblue;
+border: none;
+padding: 10px;
+font-size: 1em;
+cursor: pointer;
+border-radius: 5px;
+}
+
+/* change document content */
+#change_document .content .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 30px auto;
+}
+
+/* project details content */
+#project_details .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#project_details .content h2 {
+  border-bottom: solid 1px;
+}
+
+/* reservation successful content */
+#reservation_successful .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* details content */
+#details .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contact page */
+#contact #contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Menu page */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.menu-image {
+  width: 400px;
+  height: 600px;
+}
+
+/* About page */
+.column p {
+  text-align: center;
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ADD8E6;
+  margin-top: 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.25em;
+  color:black;
+}
